@@ -1,0 +1,19 @@
+﻿  Client.cpp
+D:\ANUL 2 sem II\PROIECT POO\Client\MACRO_Client.h(11,1): warning C4005: 'FAILED': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(29034): message : see previous definition of 'FAILED'
+D:\ANUL 2 sem II\PROIECT POO\Client\MACRO_Client.h(12,1): warning C4005: 'SUCCEEDED': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h(29028): message : see previous definition of 'SUCCEEDED'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\IMessage.h(47,2): warning C4091: '__declspec(dllimport)': ignored on left of 'IMessage' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\IMessage.h(54,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Factory_Message' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(32,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Protocol' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Client\Client.cpp(40,25): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+D:\ANUL 2 sem II\PROIECT POO\Client\Client.cpp(132,7): warning C4101: 'ret': unreferenced local variable
+D:\ANUL 2 sem II\PROIECT POO\Client\Client.cpp(162,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\ANUL 2 sem II\PROIECT POO\Client\Client.cpp(248,8): warning C4101: 'skip': unreferenced local variable
+D:\ANUL 2 sem II\PROIECT POO\Client\Client.cpp(307,13): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+D:\ANUL 2 sem II\PROIECT POO\Client\Client.cpp(377,20): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+D:\ANUL 2 sem II\PROIECT POO\Client\Client.cpp(379,23): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
+  Source.cpp
+D:\ANUL 2 sem II\PROIECT POO\Client\Source.cpp(10,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  Client.vcxproj -> D:\ANUL 2 sem II\PROIECT POO\Client\x64\Debug\Client.exe
