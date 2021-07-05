@@ -1,6 +1,6 @@
 # Work
 
-This is a C++ project which describes a data center simulation app.
+This is a C++ project which describes a data center simulation app.\
 
 Users are able to create accounts , change passwords, upload / download files and so on.
 
