@@ -1,6 +1,0 @@
-﻿  CDatabase.cpp
-D:\ATM\POO_project\work\LoginManager_Library\iDatabase.h(25,2): warning C4091: 'typedef ': ignored on left of 'DB_loginData' when no variable is declared
-D:\ATM\POO_project\work\Log_Library\ILog.h(25): warning C4091: '__declspec(dllimport)': ignored on left of 'ILog::Levels' when no variable is declared
-D:\ATM\POO_project\work\Log_Library\ILog.h(33,2): warning C4091: '__declspec(dllimport)': ignored on left of 'ILog' when no variable is declared
-D:\ATM\POO_project\work\Log_Library\ILog.h(39,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Log_Factory' when no variable is declared
-  LoginManager_Library.vcxproj -> D:\ATM\POO_project\work\LoginManager_Library\Debug\LoginManager_Library.dll
