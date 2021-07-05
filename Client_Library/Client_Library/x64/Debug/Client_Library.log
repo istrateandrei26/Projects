@@ -1,0 +1,4 @@
+﻿  CFilesManager.cpp
+D:\ANUL 2 sem II\PROIECT POO\Client_Library\Client_Library\CFilesManager.cpp(32,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+     Creating library D:\ANUL 2 sem II\PROIECT POO\Client_Library\x64\Debug\Client_Library.lib and object D:\ANUL 2 sem II\PROIECT POO\Client_Library\x64\Debug\Client_Library.exp
+  Client_Library.vcxproj -> D:\ANUL 2 sem II\PROIECT POO\Client_Library\x64\Debug\Client_Library.dll
