@@ -1,2 +1,0 @@
-E:\ATM\Anu_2\POO_project\work\Log_Library\Debug\Log_Library.dll
-D:\ATM\POO_project\work\Log_Library\Debug\Log_Library.dll
