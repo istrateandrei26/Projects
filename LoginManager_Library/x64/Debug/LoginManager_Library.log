@@ -1,0 +1,12 @@
+﻿  CLoginManager.cpp
+D:\ANUL 2 sem II\PROIECT POO\LoginManager_Library\iLoginManager.h(28,2): warning C4091: 'typedef __declspec(dllimport)': ignored on left of 'LoginManager_ClientsDetails' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\LoginManager_Library\iLoginManager.h(44,2): warning C4091: '__declspec(dllimport)': ignored on left of 'iLoginManager' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\LoginManager_Library\iLoginManager.h(50,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Factory_LoginManager' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Crypto_Library\Crypto_Library\ICipherEngine.h(61,2): warning C4091: '__declspec(dllimport)': ignored on left of 'ICipherEngine' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Crypto_Library\Crypto_Library\ICipherEngine.h(73,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Cipher_Headquarter' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\LoginManager_Library\iDatabase.h(25,2): warning C4091: 'typedef ': ignored on left of 'DB_loginData' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Log_Library\ILog.h(25): warning C4091: '__declspec(dllimport)': ignored on left of 'ILog::Levels' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Log_Library\ILog.h(33,2): warning C4091: '__declspec(dllimport)': ignored on left of 'ILog' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Log_Library\ILog.h(39,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Log_Factory' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\LoginManager_Library\CLoginManager.cpp(105,21): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+  LoginManager_Library.vcxproj -> D:\ANUL 2 sem II\PROIECT POO\LoginManager_Library\x64\Debug\LoginManager_Library.dll
