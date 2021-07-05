@@ -1,0 +1,47 @@
+﻿  CFilesManager.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(26,30): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(26,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(31,30): error C2146: syntax error: missing ')' before identifier 'MSGCALLRELEASE'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(31,30): error C2146: syntax error: missing ';' before identifier 'MSGCALLRELEASE'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(31,44): error C2059: syntax error: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(32,2): error C2065: 'ULONG': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(32,10): error C2146: syntax error: missing ')' before identifier 'ulCallerData'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(50,9): error C2065: 'SCODE': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(50,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(50,16): error C2146: syntax error: missing ';' before identifier 'OpenIMsgSession'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(55,15): error C3646: 'CloseIMsgSession': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(55,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(55,1): error C2365: 'STDAPI_': redefinition; previous definition was 'data variable'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(50): message : see declaration of 'STDAPI_'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(55,31): error C2059: syntax error: '('
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(56,13): error C2146: syntax error: missing ')' before identifier 'lpMsgSess'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(56,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(56,2): error C2040: 'LPMSGSESS': 'int' differs in levels of indirection from 'int *'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(56,13): error C2146: syntax error: missing ';' before identifier 'lpMsgSess'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(56,23): error C2059: syntax error: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(114,9): error C2065: 'SCODE': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(114,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(114,1): error C2374: 'STDAPI_': redefinition; multiple initialization
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(50): message : see declaration of 'STDAPI_'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(114,16): error C2146: syntax error: missing ';' before identifier 'OpenIMsgOnIStg'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(145,8): error C3646: 'cValues': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(145,15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(146,8): error C3646: 'aPropAttr': unknown override specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(146,17): error C2143: syntax error: missing ',' before '['
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(146,27): error C2238: unexpected token(s) preceding ';'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(147,23): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(147,19): error C2371: 'FAR': redefinition; different basic types
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(26): message : see declaration of 'FAR'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(147,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(170,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(170,8): error C2146: syntax error: missing ';' before identifier 'GetAttribIMsgOnIStg'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(181,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(181,1): error C2086: 'int STDAPI': redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(170): message : see declaration of 'STDAPI'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(181,8): error C2146: syntax error: missing ';' before identifier 'SetAttribIMsgOnIStg'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(197,9): error C2065: 'SCODE': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(197,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(197,1): error C2374: 'STDAPI_': redefinition; multiple initialization
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(50): message : see declaration of 'STDAPI_'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\IMessage.h(197,16): error C2146: syntax error: missing ';' before identifier 'MapStorageSCode'
+D:\ANUL 2 sem II\PROIECT POO\Server\CFilesManager.cpp(3,10): fatal error C1083: Cannot open include file: 'MACRO_Protocol.h': No such file or directory
