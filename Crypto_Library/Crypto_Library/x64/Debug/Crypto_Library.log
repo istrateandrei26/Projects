@@ -1,0 +1,4 @@
+﻿  AESEngine.cpp
+D:\ANUL 2 sem II\PROIECT POO\Crypto_Library\Crypto_Library\ICipherEngine.h(61,2): warning C4091: '__declspec(dllexport)': ignored on left of 'ICipherEngine' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Crypto_Library\Crypto_Library\ICipherEngine.h(73,2): warning C4091: '__declspec(dllexport)': ignored on left of 'Cipher_Headquarter' when no variable is declared
+  Crypto_Library.vcxproj -> D:\ANUL 2 sem II\PROIECT POO\Crypto_Library\x64\Debug\Crypto_Library.dll
