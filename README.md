@@ -1,7 +1,7 @@
 # Work
 
 
-This is a script which takes a list of websites as parameter and crawls each website , depending on selected depth.
+This is a script which takes a list of websites as parameter and crawls each website , depending on selected depth.<br/>
 [+] Interactive usage
 [+] Pretty design
 [+] Selective depth 
