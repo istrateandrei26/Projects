@@ -1,0 +1,77 @@
+﻿  CMessage.cpp
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\CMessage.cpp(1,1): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\CMessage.cpp : message : see previous definition of '_CRT_SECURE_NO_WARNINGS'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\CMessage.cpp(1): warning C4603: '_CRT_SECURE_NO_WARNINGS': macro is not defined or definition is different after precompiled header use
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\CMessage.cpp(1): message : Add macro to precompiled header instead of defining here
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\CMessage.cpp(3): message : use of precompiled header
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\IMessage.h(47,2): warning C4091: '__declspec(dllimport)': ignored on left of 'IMessage' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\IMessage.h(54,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Factory_Message' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(52,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Protocol' when no variable is declared
+  Protocol.cpp
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(52,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Protocol' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\IMessage.h(47,2): warning C4091: '__declspec(dllimport)': ignored on left of 'IMessage' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\IMessage.h(54,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Factory_Message' when no variable is declared
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(7,49): warning C4273: 'Protocol::checkLoginRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(21,31): message : see previous definition of 'checkLoginRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(34,49): warning C4273: 'Protocol::checkLoginRespone': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(22,31): message : see previous definition of 'checkLoginRespone'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(62,52): warning C4273: 'Protocol::checkRegisterRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(23,31): message : see previous definition of 'checkRegisterRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(88,53): warning C4273: 'Protocol::checkRegisterResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(24,31): message : see previous definition of 'checkRegisterResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(116,50): warning C4273: 'Protocol::checkBasicResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(26,31): message : see previous definition of 'checkBasicResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(144,58): warning C4273: 'Protocol::checkSendClientDataMessage': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(27,31): message : see previous definition of 'checkSendClientDataMessage'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(172,53): warning C4273: 'Protocol::chekUploadFileMessage': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(28,31): message : see previous definition of 'chekUploadFileMessage'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(207,53): warning C4273: 'Protocol::checkViewFilesRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(29,31): message : see previous definition of 'checkViewFilesRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(242,54): warning C4273: 'Protocol::checkViewFilesResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(30,31): message : see previous definition of 'checkViewFilesResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(268,57): warning C4273: 'Protocol::checkDownloandFileRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(31,31): message : see previous definition of 'checkDownloandFileRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(295,58): warning C4273: 'Protocol::checkDownloandFileResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(32,31): message : see previous definition of 'checkDownloandFileResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(322,58): warning C4273: 'Protocol::checkChangePasswordRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(33,31): message : see previous definition of 'checkChangePasswordRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(349,59): warning C4273: 'Protocol::checkChangePasswordResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(34,31): message : see previous definition of 'checkChangePasswordResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(376,55): warning C4273: 'Protocol::checkChangeEmailRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(35,31): message : see previous definition of 'checkChangeEmailRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(403,56): warning C4273: 'Protocol::checkChangeEmailResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(36,31): message : see previous definition of 'checkChangeEmailResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(430,54): warning C4273: 'Protocol::checkDeleteUserRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(37,31): message : see previous definition of 'checkDeleteUserRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(458,1): warning C4273: 'Protocol::checkDeleteUserResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(38,31): message : see previous definition of 'checkDeleteUserResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(461,53): warning C4273: 'Protocol::checkViewUsersRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(39,31): message : see previous definition of 'checkViewUsersRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(488,54): warning C4273: 'Protocol::checkViewUsersResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(40,31): message : see previous definition of 'checkViewUsersResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(515,55): warning C4273: 'Protocol::checkPromoteUserRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(41,31): message : see previous definition of 'checkPromoteUserRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(544,1): warning C4273: 'Protocol::checkPromoteUserResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(42,31): message : see previous definition of 'checkPromoteUserResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(549,1): warning C4273: 'Protocol::checkStartServerRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(43,31): message : see previous definition of 'checkStartServerRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(576,1): warning C4273: 'Protocol::checkStartServerResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(44,31): message : see previous definition of 'checkStartServerResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(604,1): warning C4273: 'Protocol::checkShutdownServerRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(45,31): message : see previous definition of 'checkShutdownServerRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(630,1): warning C4273: 'Protocol::checkShutdownServerResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(46,31): message : see previous definition of 'checkShutdownServerResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(658,1): warning C4273: 'Protocol::checkLogoutRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(47,31): message : see previous definition of 'checkLogoutRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(684,1): warning C4273: 'Protocol::checkLogoutResponse': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(48,31): message : see previous definition of 'checkLogoutResponse'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(712,1): warning C4273: 'Protocol::checkAdminRequest': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(49,31): message : see previous definition of 'checkAdminRequest'
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.cpp(738,44): warning C4273: 'Protocol::checkTypeOfMessage': inconsistent dll linkage
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(50,31): message : see previous definition of 'checkTypeOfMessage'
+  Source.cpp
+D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\Protocol.h(52,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Protocol' when no variable is declared
+  Generating Code...
+     Creating library D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\x64\Debug\Protocol_Library.lib and object D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\x64\Debug\Protocol_Library.exp
+LINK : warning LNK4217: symbol '?checkTypeOfMessage@Protocol@@SAHH@Z (public: static int __cdecl Protocol::checkTypeOfMessage(int))' defined in 'Protocol.obj' is imported by 'CMessage.obj' in function '"public: __cdecl CMessage::CMessage(int)" (??0CMessage@@QEAA@H@Z)'
+  Protocol_Library.vcxproj -> D:\ANUL 2 sem II\PROIECT POO\Protocol_Library\x64\Debug\Protocol_Library.dll
