@@ -1,0 +1,5 @@
+﻿  CAdmin.cpp
+D:\ATM\POO_project\work\Protocol_Library\Protocol.h(45,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Protocol' when no variable is declared
+D:\ATM\POO_project\work\Protocol_Library\IMessage.h(47,2): warning C4091: '__declspec(dllimport)': ignored on left of 'IMessage' when no variable is declared
+D:\ATM\POO_project\work\Protocol_Library\IMessage.h(54,2): warning C4091: '__declspec(dllimport)': ignored on left of 'Factory_Message' when no variable is declared
+  Client.vcxproj -> D:\ATM\POO_project\work\Client\Debug\Client.exe
