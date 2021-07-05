@@ -6,9 +6,9 @@ Users are able to create accounts , change passwords, upload / download files an
 
 There is a GUI implemented, theme feature :) 
 
-2 types of accounts , common user and admin ... 
+2 types of accounts , common user and admin ... \n
 
-  [+] only c++ and Qt framework used 
+  [+] only c++ and Qt framework used \n
   [+] socket communication used 
   [+] OOP principles 
   [+] SQL Server database integrated also :) 
