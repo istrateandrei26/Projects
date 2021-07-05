@@ -8,7 +8,7 @@ There is a GUI implemented, theme feature :)
 
 2 types of accounts , common user and admin ... 
 
-  [+] only c++ and Qt framework used echo 
+  [+] only c++ and Qt framework used
   
   [+] socket communication used 
   
