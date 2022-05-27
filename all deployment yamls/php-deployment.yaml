@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app: myapache
+  name: myapache
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: myapache
+  template:
+    metadata:
+      labels:
+        app: myapache
+    spec:
+      containers:
+      - image: localhost:32000/myapache
+        name: myapache
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapache
+spec:
+  externalIPs:
+  - 10.0.0.4
+  selector:
+    app: myapache
+  ports:
+    - protocol: TCP
+      port: 88
+      targetPort: 80  

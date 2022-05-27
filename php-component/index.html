@@ -1,0 +1,40 @@
+<!-- <?php
+	
+	$redis = new Redis();
+	$redis->connect('myredis');
+    $redis->auth('student');
+    $key = 'MESSAGES';
+    $redis->rpush("tutorial-list", "Redis"); 
+    $redis->rpush("tutorial-list", "Mongodb"); 
+    $redis->rpush("tutorial-list", "Mysql");  
+    
+    // Get the stored data and print it 
+    $arList = $redis->lrange("tutorial-list", 0 ,-1); 
+    echo "Stored string in redis:: "; 
+    print_r($arList); 
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+</head>
+    <body>
+        <div class="chat-container">
+            <h4>WELCOME</h4>
+            <div id="chat-content" class="chat-text">
+                <!-- Empty -->
+            </div>
+            <input placeholder="From" type="text" id="from-input"/>
+            <input placeholder="Your message" type="text" id="message-input"/>
+            <button onclick="">Send Message</button>
+        </div>
+    </body>
+</html>
+
+
