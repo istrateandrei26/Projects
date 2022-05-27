@@ -1,0 +1,9 @@
+-adaugare istoric masini inchiriate
+-adaugare disponibilitate masina
+-adaugare functionalitati masina
+
+
+
+todo :
+- baza de date cu urmatoarele tabele:
+	-clienti, masini, inregistrari cu inchiriatul

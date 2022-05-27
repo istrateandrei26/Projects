@@ -1,0 +1,172 @@
+.cars-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.cars-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+    transition: .6s;
+}
+
+.cars-container .box:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+
+.cars-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.cars-container .box p{
+    padding: 0 10px;
+    border: 1px solid #202731;
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+
+.cars-container .box h3{
+    font-weight: 500;
+}
+
+.cars-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00acb4;
+    margin: 0.3rem 0 0.5rem;
+}
+
+
+
+.heading{
+    text-align: center;
+}
+
+.heading span{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.heading h1{
+    font-size: 2rem;
+}
+
+section{
+    margin-top: 40px;
+}
+
+
+.cars-container .box .quantity-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+
+.quantity-button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #202731;
+    border: none;
+    outline: none;
+    color: #E7E7E7;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: .6s;
+}
+
+.quantity-button:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+meter {
+    /* Reset the default appearance */
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    /* appearance: none; */
+
+    margin: 0 auto 1em;
+    width: 100%;
+    height: 0.5em;
+
+    /* Applicable only to Firefox */
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 1rem;
+}
+
+
+
+
+
+/* checkout section */
+hr{
+    margin: 2rem ;
+}
+.checkout{
+    padding: 1rem;
+    background-color: #202731;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    height: 7rem;
+}
+.total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.total-quantity{
+    font-size: 22px;
+    font-weight: 700;
+    color: #e7e7e7;
+}
+
+.amount{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #e7e7e7;
+}
+
+.button-container{
+    display:flex;
+    justify-content: center;
+}
+
+.checkout-button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 1rem;
+    background: #0b666b;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e7e7e7;
+}
+
+.checkout-button:hover{
+    background: #00acb4;
+}
+
+.trash{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    float: right;
+}

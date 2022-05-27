@@ -1,0 +1,25 @@
+table {
+    margin-top: 200px; 
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+table th{
+    height: 4rem;
+    background-color: #202731;
+    color: #e7e7e7;
+}
+
+table tr{
+    height: 2rem;
+}
+
+table tr:hover{
+    background-color: #0b666b;
+    cursor:pointer;
+    color: #e7e7e7;
+}
