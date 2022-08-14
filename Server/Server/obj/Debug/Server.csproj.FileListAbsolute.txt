@@ -1,0 +1,40 @@
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\bin\Debug\Server.exe.config
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\bin\Debug\Server.exe
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\bin\Debug\Server.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\bin\Debug\Utilities.dll
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\bin\Debug\Utilities.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\obj\Debug\Server.csproj.CopyComplete
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\obj\Debug\Server.exe
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Server\Server\obj\Debug\Server.pdb
+C:\Users\Alex\Desktop\C#\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Alex\Desktop\C#\Server\Server\bin\Debug\Server.exe
+C:\Users\Alex\Desktop\C#\Server\Server\bin\Debug\Server.pdb
+C:\Users\Alex\Desktop\C#\Server\Server\bin\Debug\Utilities.dll
+C:\Users\Alex\Desktop\C#\Server\Server\bin\Debug\Utilities.pdb
+C:\Users\Alex\Desktop\C#\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\C#\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\C#\Server\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Alex\Desktop\C#\Server\Server\obj\Debug\Server.exe
+C:\Users\Alex\Desktop\C#\Server\Server\obj\Debug\Server.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\bin\Debug\Server.exe.config
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\bin\Debug\Server.exe
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\bin\Debug\Server.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\bin\Debug\Utilities.dll
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\bin\Debug\Utilities.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\obj\Debug\Server.csproj.CopyComplete
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\obj\Debug\Server.exe
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Server\Server\obj\Debug\Server.pdb
+C:\Users\40765\Desktop\Istrate\App\Server\Server\bin\Debug\Server.exe.config
+C:\Users\40765\Desktop\Istrate\App\Server\Server\bin\Debug\Server.exe
+C:\Users\40765\Desktop\Istrate\App\Server\Server\bin\Debug\Server.pdb
+C:\Users\40765\Desktop\Istrate\App\Server\Server\bin\Debug\Utilities.dll
+C:\Users\40765\Desktop\Istrate\App\Server\Server\bin\Debug\Utilities.pdb
+C:\Users\40765\Desktop\Istrate\App\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\40765\Desktop\Istrate\App\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\40765\Desktop\Istrate\App\Server\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\40765\Desktop\Istrate\App\Server\Server\obj\Debug\Server.exe
+C:\Users\40765\Desktop\Istrate\App\Server\Server\obj\Debug\Server.pdb

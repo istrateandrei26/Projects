@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2793c5f3f0c845b69f8a0dc0110fead2" Name="Diagram1">
+        <EntityTypeShape EntityType="AirlineReservationSystemModel.Client" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlineReservationSystemModel.ClientsNTicket" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlineReservationSystemModel.Credential" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlineReservationSystemModel.Flight" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlineReservationSystemModel.Ticket" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="AirlineReservationSystemModel.FK_Credentials_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlineReservationSystemModel.FK_Tickets_Flights" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlineReservationSystemModel.ClientsNTickets" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

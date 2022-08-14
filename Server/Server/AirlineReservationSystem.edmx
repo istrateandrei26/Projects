@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AirlineReservationSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="IdClient" />
+          </Key>
+          <Property Name="IdClient" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nume" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Prenume" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CNP" Type="char" MaxLength="13" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Varsta" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ClientsNTickets">
+          <Key>
+            <PropertyRef Name="IdClient" />
+            <PropertyRef Name="IdBilet" />
+          </Key>
+          <Property Name="IdClient" Type="int" Nullable="false" />
+          <Property Name="IdBilet" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Credentials">
+          <Key>
+            <PropertyRef Name="IdCredentiale" />
+          </Key>
+          <Property Name="IdCredentiale" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="88" Nullable="false" />
+          <Property Name="IdClient" Type="int" Nullable="false" />
+          <Property Name="Salt" Type="nvarchar" MaxLength="16" />
+        </EntityType>
+        <EntityType Name="Flights">
+          <Key>
+            <PropertyRef Name="IdZbor" />
+          </Key>
+          <Property Name="IdZbor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Destinatie" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Plecare" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DataSiOraDecolarii" Type="datetime" Nullable="false" />
+          <Property Name="DataSiOraSosirii" Type="datetime" Nullable="false" />
+          <Property Name="TotalLocuriDisponibile" Type="int" Nullable="false" />
+          <Property Name="Pret" Type="float" />
+        </EntityType>
+        <EntityType Name="Tickets">
+          <Key>
+            <PropertyRef Name="IdBilet" />
+          </Key>
+          <Property Name="IdBilet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdZbor" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ClientsNTickets_Clients">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+          <End Role="ClientsNTickets" Type="Self.ClientsNTickets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="IdClient" />
+            </Principal>
+            <Dependent Role="ClientsNTickets">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClientsNTickets_Tickets">
+          <End Role="Tickets" Type="Self.Tickets" Multiplicity="1" />
+          <End Role="ClientsNTickets" Type="Self.ClientsNTickets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tickets">
+              <PropertyRef Name="IdBilet" />
+            </Principal>
+            <Dependent Role="ClientsNTickets">
+              <PropertyRef Name="IdBilet" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Credentials_Clients">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+          <End Role="Credentials" Type="Self.Credentials" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="IdClient" />
+            </Principal>
+            <Dependent Role="Credentials">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tickets_Flights">
+          <End Role="Flights" Type="Self.Flights" Multiplicity="1" />
+          <End Role="Tickets" Type="Self.Tickets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Flights">
+              <PropertyRef Name="IdZbor" />
+            </Principal>
+            <Dependent Role="Tickets">
+              <PropertyRef Name="IdZbor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="LoginProcedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="username" Type="nvarchar" Mode="In" />
+          <Parameter Name="password" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="RegisterProcedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="CNP" Type="nvarchar" Mode="In" />
+          <Parameter Name="Age" Type="nvarchar" Mode="In" />
+          <Parameter Name="username" Type="nvarchar" Mode="In" />
+          <Parameter Name="password" Type="nvarchar" Mode="In" />
+          <Parameter Name="salt" Type="nvarchar" Mode="In" />
+          <Parameter Name="numRows" Type="int" Mode="InOut" />
+        </Function>
+        <EntityContainer Name="AirlineReservationSystemModelStoreContainer">
+          <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ClientsNTickets" EntityType="Self.ClientsNTickets" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Credentials" EntityType="Self.Credentials" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Flights" EntityType="Self.Flights" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tickets" EntityType="Self.Tickets" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ClientsNTickets_Clients" Association="Self.FK_ClientsNTickets_Clients">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="ClientsNTickets" EntitySet="ClientsNTickets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClientsNTickets_Tickets" Association="Self.FK_ClientsNTickets_Tickets">
+            <End Role="Tickets" EntitySet="Tickets" />
+            <End Role="ClientsNTickets" EntitySet="ClientsNTickets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Credentials_Clients" Association="Self.FK_Credentials_Clients">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Credentials" EntitySet="Credentials" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tickets_Flights" Association="Self.FK_Tickets_Flights">
+            <End Role="Flights" EntitySet="Flights" />
+            <End Role="Tickets" EntitySet="Tickets" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AirlineReservationSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="IdClient" />
+          </Key>
+          <Property Name="IdClient" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nume" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Prenume" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CNP" Type="String" MaxLength="13" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Varsta" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Credentials" Relationship="Self.FK_Credentials_Clients" FromRole="Clients" ToRole="Credentials" />
+          <NavigationProperty Name="Tickets" Relationship="AirlineReservationSystemModel.ClientsNTickets" FromRole="Client" ToRole="Ticket" />
+        </EntityType>
+        <EntityType Name="ClientsNTicket">
+          <Key>
+            <PropertyRef Name="IdClient" />
+            <PropertyRef Name="IdBilet" />
+          </Key>
+          <Property Name="IdClient" Type="Int32" Nullable="false" />
+          <Property Name="IdBilet" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Credential">
+          <Key>
+            <PropertyRef Name="IdCredentiale" />
+          </Key>
+          <Property Name="IdCredentiale" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="88" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IdClient" Type="Int32" Nullable="false" />
+          <Property Name="Salt" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Client" Relationship="Self.FK_Credentials_Clients" FromRole="Credentials" ToRole="Clients" />
+        </EntityType>
+        <EntityType Name="Flight">
+          <Key>
+            <PropertyRef Name="IdZbor" />
+          </Key>
+          <Property Name="IdZbor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Destinatie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Plecare" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DataSiOraDecolarii" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DataSiOraSosirii" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TotalLocuriDisponibile" Type="Int32" Nullable="false" />
+          <Property Name="Pret" Type="Double" />
+          <NavigationProperty Name="Tickets" Relationship="Self.FK_Tickets_Flights" FromRole="Flights" ToRole="Tickets" />
+        </EntityType>
+        <EntityType Name="Ticket">
+          <Key>
+            <PropertyRef Name="IdBilet" />
+          </Key>
+          <Property Name="IdBilet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdZbor" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Flight" Relationship="Self.FK_Tickets_Flights" FromRole="Tickets" ToRole="Flights" />
+          <NavigationProperty Name="Clients" Relationship="AirlineReservationSystemModel.ClientsNTickets" FromRole="Ticket" ToRole="Client" />
+        </EntityType>
+        <Association Name="FK_Credentials_Clients">
+          <End Role="Clients" Type="Self.Client" Multiplicity="1" />
+          <End Role="Credentials" Type="Self.Credential" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="IdClient" />
+            </Principal>
+            <Dependent Role="Credentials">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tickets_Flights">
+          <End Role="Flights" Type="Self.Flight" Multiplicity="1" />
+          <End Role="Tickets" Type="Self.Ticket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Flights">
+              <PropertyRef Name="IdZbor" />
+            </Principal>
+            <Dependent Role="Tickets">
+              <PropertyRef Name="IdZbor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AirlineReservationSystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clients" EntityType="Self.Client" />
+          <EntitySet Name="ClientsNTickets" EntityType="Self.ClientsNTicket" />
+          <EntitySet Name="Credentials" EntityType="Self.Credential" />
+          <EntitySet Name="Flights" EntityType="Self.Flight" />
+          <EntitySet Name="Tickets" EntityType="Self.Ticket" />
+          <AssociationSet Name="FK_Credentials_Clients" Association="Self.FK_Credentials_Clients">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Credentials" EntitySet="Credentials" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tickets_Flights" Association="Self.FK_Tickets_Flights">
+            <End Role="Flights" EntitySet="Flights" />
+            <End Role="Tickets" EntitySet="Tickets" />
+          </AssociationSet>
+          <FunctionImport Name="LoginProcedure" ReturnType="Collection(Int32)">
+            <Parameter Name="username" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="RegisterProcedure">
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="CNP" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="String" />
+            <Parameter Name="username" Mode="In" Type="String" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="salt" Mode="In" Type="String" />
+            <Parameter Name="numRows" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <AssociationSet Name="ClientsNTickets1" Association="AirlineReservationSystemModel.ClientsNTickets">
+            <End Role="Client" EntitySet="Clients" />
+            <End Role="Ticket" EntitySet="Tickets" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="ClientsNTickets">
+          <End Type="AirlineReservationSystemModel.Client" Role="Client" Multiplicity="*" />
+          <End Type="AirlineReservationSystemModel.Ticket" Role="Ticket" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AirlineReservationSystemModelStoreContainer" CdmEntityContainer="AirlineReservationSystemEntities">
+          <EntitySetMapping Name="Clients">
+            <EntityTypeMapping TypeName="AirlineReservationSystemModel.Client">
+              <MappingFragment StoreEntitySet="Clients">
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+                <ScalarProperty Name="Nume" ColumnName="Nume" />
+                <ScalarProperty Name="Prenume" ColumnName="Prenume" />
+                <ScalarProperty Name="CNP" ColumnName="CNP" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Varsta" ColumnName="Varsta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ClientsNTickets">
+            <EntityTypeMapping TypeName="AirlineReservationSystemModel.ClientsNTicket">
+              <MappingFragment StoreEntitySet="ClientsNTickets">
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+                <ScalarProperty Name="IdBilet" ColumnName="IdBilet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Credentials">
+            <EntityTypeMapping TypeName="AirlineReservationSystemModel.Credential">
+              <MappingFragment StoreEntitySet="Credentials">
+                <ScalarProperty Name="IdCredentiale" ColumnName="IdCredentiale" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+                <ScalarProperty Name="Salt" ColumnName="Salt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Flights">
+            <EntityTypeMapping TypeName="AirlineReservationSystemModel.Flight">
+              <MappingFragment StoreEntitySet="Flights">
+                <ScalarProperty Name="IdZbor" ColumnName="IdZbor" />
+                <ScalarProperty Name="Destinatie" ColumnName="Destinatie" />
+                <ScalarProperty Name="Plecare" ColumnName="Plecare" />
+                <ScalarProperty Name="DataSiOraDecolarii" ColumnName="DataSiOraDecolarii" />
+                <ScalarProperty Name="DataSiOraSosirii" ColumnName="DataSiOraSosirii" />
+                <ScalarProperty Name="TotalLocuriDisponibile" ColumnName="TotalLocuriDisponibile" />
+                <ScalarProperty Name="Pret" ColumnName="Pret" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tickets">
+            <EntityTypeMapping TypeName="AirlineReservationSystemModel.Ticket">
+              <MappingFragment StoreEntitySet="Tickets">
+                <ScalarProperty Name="IdBilet" ColumnName="IdBilet" />
+                <ScalarProperty Name="IdZbor" ColumnName="IdZbor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="LoginProcedure" FunctionName="AirlineReservationSystemModel.Store.LoginProcedure" />
+          <FunctionImportMapping FunctionImportName="RegisterProcedure" FunctionName="AirlineReservationSystemModel.Store.RegisterProcedure" />
+          <AssociationSetMapping Name="ClientsNTickets1" TypeName="AirlineReservationSystemModel.ClientsNTickets" StoreEntitySet="ClientsNTickets">
+            <EndProperty Name="Ticket">
+              <ScalarProperty Name="IdBilet" ColumnName="IdBilet" />
+            </EndProperty>
+            <EndProperty Name="Client">
+              <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
