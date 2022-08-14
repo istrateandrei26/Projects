@@ -1,0 +1,18 @@
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Utilities\bin\Debug\Utilities.dll
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Utilities\bin\Debug\Utilities.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Utilities\obj\Debug\Utilities.dll
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\Proiect\Utilities\obj\Debug\Utilities.pdb
+C:\Users\Alex\Desktop\C#\Utilities\bin\Debug\Utilities.dll
+C:\Users\Alex\Desktop\C#\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Alex\Desktop\C#\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\C#\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\C#\Utilities\obj\Debug\Utilities.dll
+C:\Users\Alex\Desktop\C#\Utilities\obj\Debug\Utilities.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Utilities\obj\Debug\Utilities.dll
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Utilities\obj\Debug\Utilities.pdb
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Utilities\bin\Debug\Utilities.dll
+D:\ANUL 3\Aplicatii pentru proiectarea bazelor de date\App\Utilities\bin\Debug\Utilities.pdb
